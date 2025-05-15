@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NanoBots - Bloodstream Adventure</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        color: #ffffff;
+        line-height: 1.6;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+
+      header {
+        text-align: center;
+        padding: 3rem 0;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        margin-bottom: 2rem;
+      }
+
+      h1 {
+        font-size: 3rem;
+        margin: 0;
+        color: #00ff88;
+        text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+      }
+
+      .subtitle {
+        font-size: 1.2rem;
+        color: #a0a0a0;
+        margin-top: 1rem;
+      }
+
+      .download-section {
+        text-align: center;
+        padding: 2rem;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 15px;
+        margin-bottom: 2rem;
+      }
+
+      .download-btn {
+        display: inline-block;
+        padding: 1rem 2rem;
+        background: #00ff88;
+        color: #1a1a2e;
+        text-decoration: none;
+        border-radius: 50px;
+        font-weight: bold;
+        font-size: 1.2rem;
+        transition: all 0.3s ease;
+        margin: 1rem 0;
+      }
+
+      .download-btn:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(0, 255, 136, 0.5);
+      }
+
+      .instructions {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 2rem;
+        border-radius: 15px;
+        margin-bottom: 2rem;
+      }
+
+      .instructions h2 {
+        color: #00ff88;
+        margin-top: 0;
+      }
+
+      .controls {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+
+      .control-item {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 1rem;
+        border-radius: 10px;
+      }
+
+      .control-item h3 {
+        color: #00ff88;
+        margin-top: 0;
+      }
+
+      .features {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+
+      .feature-card {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 1.5rem;
+        border-radius: 10px;
+        text-align: center;
+      }
+
+      .feature-card h3 {
+        color: #00ff88;
+        margin-top: 0;
+      }
+
+      footer {
+        text-align: center;
+        padding: 2rem;
+        color: #a0a0a0;
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          padding: 1rem;
+        }
+
+        h1 {
+          font-size: 2rem;
+        }
+
+        .controls {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>NanoBots</h1>
+        <p class="subtitle">
+          Navigate through the bloodstream and fight viruses in this exciting 3D
+          adventure!
+        </p>
+      </header>
+
+      <section class="download-section">
+        <h2>Ready to Play?</h2>
+        <p>Download the game and start your journey through the bloodstream!</p>
+        <a
+          href="https://drive.google.com/file/d/18mIohUApjsEKR5SkOOnSpb486tKiwnw7/view?usp=sharing"
+          class="download-btn"
+          target="_blank"
+          >Download NanoBots</a
+        >
+        <p><small>Windows executable (.exe) - 64-bit</small></p>
+      </section>
+
+      <section class="instructions">
+        <h2>How to Play</h2>
+        <div class="controls">
+          <div class="control-item">
+            <h3>Movement</h3>
+            <p>WASD or Arrow Keys to move</p>
+            <p>Space or Left Mouse Button to shoot</p>
+          </div>
+          <div class="control-item">
+            <h3>Special Controls</h3>
+            <p>V - Toggle First/Third Person View</p>
+            <p>P - Pause Game</p>
+            <p>C - Toggle Cheat Mode</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="feature-card">
+          <h3>Power-ups</h3>
+          <p>Collect various power-ups to enhance your abilities:</p>
+          <ul style="list-style: none; padding: 0">
+            <li>🔵 Speed Boost</li>
+            <li>🟣 Magnet Mode</li>
+            <li>🔴 Laser Mode</li>
+            <li>🟢 Health Restore</li>
+            <li>⚪ Oxygen Bonus</li>
+          </ul>
+        </div>
+        <div class="feature-card">
+          <h3>Game Features</h3>
+          <p>Experience an immersive 3D environment with:</p>
+          <ul style="list-style: none; padding: 0">
+            <li>🎮 Dynamic difficulty</li>
+            <li>👾 Boss battles</li>
+            <li>🌟 Score system</li>
+            <li>🎯 Multiple levels</li>
+            <li>💫 Special effects</li>
+          </ul>
+        </div>
+      </section>
+
+      <footer>
+        <p>© 2025 NanoBots Game. All rights reserved.</p>
+        <p>Created with OpenGL and Python</p>
+      </footer>
+    </div>
+  </body>
+</html>
